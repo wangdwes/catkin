@@ -2,7 +2,7 @@
 <sdf version="1.4">
   <world name="default">
     <include>
-      <uri>model://gronud_plane</uri>
+      <uri>model://ground_plane</uri>
     </include>
     <include>
       <uri>model://sun</uri>
