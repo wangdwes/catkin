@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mrsd_tutorial")
+set(mrsd_tutorial_MAINTAINER "dawei <dawei@todo.todo>")
+set(mrsd_tutorial_DEPRECATED "")
+set(mrsd_tutorial_VERSION "0.0.0")
+set(mrsd_tutorial_BUILD_DEPENDS "cv_bridge" "image_transport" "roscpp" "sensor_msgs")
+set(mrsd_tutorial_RUN_DEPENDS "cv_bridge" "image_transport" "roscpp" "sensor_msgs")
+set(mrsd_tutorial_BUILDTOOL_DEPENDS "catkin")
