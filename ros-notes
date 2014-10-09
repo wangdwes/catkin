@@ -1,0 +1,96 @@
+source /opt/ros/indigo/setup.bash
+source ~/catkin-ws/devel/setup.bash
+
+catkin_init_workspace: initialize the workspace (obviously);
+catkin_create_pkg: create a new package (with dependencies);
+catkin_make: convenience alternative tool for cmake;
+
+rospack find [package-name]: find a package by its name (after sourcing);
+rospack depends1 [package-name]: list dependencies;
+rospack depend [package-name]: list dependencies recursively. 
+roscd: change directory directly to a package or a stack;
+rosls: ls directly in a package by name; 
+rosout: ros equivalent of stdout/stderr.
+roscore: master + rosout + parameter server.
+rosnode list: displays information about the ros nodes that are currently running. 
+rosnode ping [package-name]: test whether a package is up. 
+rosrun [package-name] [node-name]
+rostopic echo [data]:
+rostopic type [topic]:
+rostopic pub [topic] [message-type] [args]
+rostopic hz: report the rate at which data is published;
+rosmsg show [message-type]:
+rosservice list: list the services provided by some node;
+rosservice type: argument type;
+rosservice call: call a service;
+rosparam list: list the parameters of some node;
+rosparam set [param-name]: set a parameter;
+rosparam get [param-name]: get a parameter.
+rosparam dump [file-name];
+rosparam load [file-name];
+roslaunch [package] [filename.launch];
+rosed [package-name] [filename]: edit a file within a package. 
+roscp [package-name] [file-to-copy-path] [copy-path]; 
+rossrv show <service-type>;
+rosmsg show <message-type>;
+rosbag record -a;
+rosbag info <bagfile>;
+rosbag play <bagfile>;
+rosbag wtf.
+
+: packages = CMakeList.txt + package.xml;
+: package.xml = ...;
+: package.xml + message_generation/runtime.
+
+node: an executable that uses ros to communicate with other nodes.
+messages: ros data type used when subscribing or publishing to a topic.
+topics: nodes can publish messages to a topic as well as
+  subscribe to a topic to receive messages.
+master: name service for ros.
+publisher;
+subscriber;
+service;
+client.
+
+: rosrun rqt_graph rqt_graph: the information exchange network;
+: rosrun rqt_plot rqt_plot: the data plot;
+: rosrun rqt_console rqt_console: the data logger;
+: rosrun rqt_logger_level rqt_logger_level: the data logger level changer.
+
+msg: describes the fields of a ros message.
+srv: describes a service. 
+
+rosrun rviz rviz
+roslaunch drcsim_gazebo atlas.launch
+
+Sept. 19th. 
+
+objects to grab. 
+1. wood, 2x4, 4x4;
+2. pipe, cylinder, diameter = 2 to 4 inches;
+3. door knobs;
+4. circular valve;
+5. drill; 
+
+Oct. 7th
+
+ros indigo hosts gazebo 2.x, but to use gazebo 4 with ros, refer to:
+* http://gazebosim.org/tutorials?tut=ros_wrapper_versions&cat=connect_ros
+* http://gazebosim.org/tutorials?tut=ros_installing&cat=connect_ros
+
+and: roslaunch gazebo_ros gazebo
+issue: roslaunch gazebo_ros empty_model.world: process has died
+solution: 1) ps ax | grep gzserver and kill pid.
+
+roslaunch gazebo_ros willowgarage_world.launch
+roslaunch gazebo_ros mud_world.launch
+roslaunch gazebo_ros shapes_world.launch
+roslaunch gazebo_ros rubble_world.launch
+
+* http://gazebosim.org/tutorials?tut=ros_roslaunch&cat=connect_ros
+note that the package names are: MYROBOT_gazebo and MYROBOT_description.
+
+* to create a catkin package, refer to 
+http://wiki.ros.org/ROS/Tutorials/catkin/CreatingPackage
+
+rosrun gazebo_ros spawn_model -file ~/catkin-ws/src/evolutus_description/sdf/chimp-head.sdf -sdf -z 0 -model evolutus
