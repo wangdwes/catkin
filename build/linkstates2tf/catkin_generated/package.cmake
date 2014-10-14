@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "linkstates2tf")
+set(linkstates2tf_MAINTAINER "Dawei <daweiwan@andrew.cmu.edu>")
+set(linkstates2tf_DEPRECATED "")
+set(linkstates2tf_VERSION "0.0.0")
+set(linkstates2tf_BUILD_DEPENDS "gazebo_msgs" "roscpp" "std_msgs" "tf")
+set(linkstates2tf_RUN_DEPENDS "gazebo_msgs" "roscpp" "std_msgs" "tf")
+set(linkstates2tf_BUILDTOOL_DEPENDS "catkin")

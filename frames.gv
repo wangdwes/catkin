@@ -1,0 +1,9 @@
+digraph G {
+"world" -> "ground_plane::link"[label="Broadcaster: /linkstates2tf\nAverage rate: 710.897 Hz\nMost recent transform: 67.454 \nBuffer length: 4.469 sec\n"];
+"world" -> "gas_station::link"[label="Broadcaster: /linkstates2tf\nAverage rate: 697.919 Hz\nMost recent transform: 67.454 \nBuffer length: 4.469 sec\n"];
+"world" -> "chimp_lidars::world"[label="Broadcaster: /linkstates2tf\nAverage rate: 697.024 Hz\nMost recent transform: 67.454 \nBuffer length: 4.469 sec\n"];
+"world" -> "chimp_lidars::support"[label="Broadcaster: /linkstates2tf\nAverage rate: 695.905 Hz\nMost recent transform: 67.454 \nBuffer length: 4.469 sec\n"];
+"world" -> "chimp_lidars::rotator"[label="Broadcaster: /linkstates2tf\nAverage rate: 693.891 Hz\nMost recent transform: 67.454 \nBuffer length: 4.469 sec\n"];
+"world" -> "chimp_lidars::hokuyo_left_link"[label="Broadcaster: /linkstates2tf\nAverage rate: 712.240 Hz\nMost recent transform: 67.454 \nBuffer length: 4.469 sec\n"];
+"world" -> "chimp_lidars::hokuyo_right_link"[label="Broadcaster: /linkstates2tf\nAverage rate: 711.345 Hz\nMost recent transform: 67.454 \nBuffer length: 4.469 sec\n"];
+}

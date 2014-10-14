@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: evolutus_gazebo
+Description: Description of evolutus_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/devel/lib 
+Requires: 

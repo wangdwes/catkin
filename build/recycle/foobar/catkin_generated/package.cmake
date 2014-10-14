@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "foobar")
+set(foobar_MAINTAINER "foobar <foobar@garage.com>")
+set(foobar_DEPRECATED "")
+set(foobar_VERSION "1.2.4")
+set(foobar_BUILD_DEPENDS "roscpp" "std_msgs")
+set(foobar_RUN_DEPENDS "roscpp" "std_msgs")
+set(foobar_BUILDTOOL_DEPENDS "catkin")

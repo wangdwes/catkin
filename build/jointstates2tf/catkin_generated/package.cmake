@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "jointstates2tf")
+set(jointstates2tf_MAINTAINER "Dawei <daweiwan@andrew.cmu.edu>")
+set(jointstates2tf_DEPRECATED "")
+set(jointstates2tf_VERSION "0.0.0")
+set(jointstates2tf_BUILD_DEPENDS "gazebo_msgs" "roscpp" "std_msgs" "tf")
+set(jointstates2tf_RUN_DEPENDS "gazebo_msgs" "roscpp" "std_msgs" "tf")
+set(jointstates2tf_BUILDTOOL_DEPENDS "catkin")

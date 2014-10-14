@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "laser_mapper")
+set(laser_mapper_MAINTAINER "dawei <dawei@todo.todo>")
+set(laser_mapper_DEPRECATED "")
+set(laser_mapper_VERSION "0.0.0")
+set(laser_mapper_BUILD_DEPENDS "laser_geometry" "message_filters" "sensor_msgs" "std_msgs" "tf")
+set(laser_mapper_RUN_DEPENDS "laser_geometry" "message_filters" "sensor_msgs" "std_msgs" "tf")
+set(laser_mapper_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "evolutus_gazebo")
+set(evolutus_gazebo_MAINTAINER "dawei <dawei@todo.todo>")
+set(evolutus_gazebo_DEPRECATED "")
+set(evolutus_gazebo_VERSION "0.0.0")
+set(evolutus_gazebo_BUILD_DEPENDS "roscpp" "std_msgs")
+set(evolutus_gazebo_RUN_DEPENDS "roscpp" "std_msgs")
+set(evolutus_gazebo_BUILDTOOL_DEPENDS "catkin")

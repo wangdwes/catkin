@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: laser_mapper
+Description: Description of laser_mapper
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/devel/lib 
+Requires: 

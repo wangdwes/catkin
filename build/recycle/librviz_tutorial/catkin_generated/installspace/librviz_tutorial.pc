@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/install
+
+Name: librviz_tutorial
+Description: Description of librviz_tutorial
+Version: 0.9.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/install/lib 
+Requires: 

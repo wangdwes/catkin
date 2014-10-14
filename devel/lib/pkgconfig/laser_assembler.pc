@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: laser_assembler
+Description: Description of laser_assembler
+Version: 1.7.2
+Cflags: -I/home/dawei/catkin-ws/devel/include -I/home/dawei/catkin-ws/src/recycle/laser_assembler/include
+Libs: -L/home/dawei/catkin-ws/devel/lib 
+Requires: tf sensor_msgs message_filters roscpp laser_geometry filters message_runtime

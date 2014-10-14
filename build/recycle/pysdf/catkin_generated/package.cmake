@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pysdf")
+set(pysdf_MAINTAINER "Andreas Bihlmaier <andreas.bihlmaier@gmx.de>")
+set(pysdf_DEPRECATED "")
+set(pysdf_VERSION "0.0.0")
+set(pysdf_BUILD_DEPENDS "rospy")
+set(pysdf_RUN_DEPENDS "rospy")
+set(pysdf_BUILDTOOL_DEPENDS "catkin")

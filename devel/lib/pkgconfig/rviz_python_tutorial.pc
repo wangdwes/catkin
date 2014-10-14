@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: rviz_python_tutorial
+Description: Description of rviz_python_tutorial
+Version: 0.9.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/devel/lib 
+Requires: 

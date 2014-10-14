@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "gazebo2rviz")
+set(gazebo2rviz_MAINTAINER "Andreas Bihlmaier <andreas.bihlmaier@gmx.de>")
+set(gazebo2rviz_DEPRECATED "")
+set(gazebo2rviz_VERSION "0.1.0")
+set(gazebo2rviz_BUILD_DEPENDS "rospy" "pysdf")
+set(gazebo2rviz_RUN_DEPENDS "pysdf" "rospy")
+set(gazebo2rviz_BUILDTOOL_DEPENDS "catkin")

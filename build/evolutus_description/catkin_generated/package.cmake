@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "evolutus_description")
+set(evolutus_description_MAINTAINER "dawei <dawei@todo.todo>")
+set(evolutus_description_DEPRECATED "")
+set(evolutus_description_VERSION "0.0.0")
+set(evolutus_description_BUILD_DEPENDS "roscpp" "std_msgs")
+set(evolutus_description_RUN_DEPENDS "roscpp" "std_msgs")
+set(evolutus_description_BUILDTOOL_DEPENDS "catkin")

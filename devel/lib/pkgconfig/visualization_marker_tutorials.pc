@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: visualization_marker_tutorials
+Description: Description of visualization_marker_tutorials
+Version: 0.9.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/devel/lib 
+Requires: roscpp visualization_msgs

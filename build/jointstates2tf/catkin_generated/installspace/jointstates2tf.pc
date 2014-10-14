@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/install
+
+Name: jointstates2tf
+Description: Description of jointstates2tf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/install/lib 
+Requires: 

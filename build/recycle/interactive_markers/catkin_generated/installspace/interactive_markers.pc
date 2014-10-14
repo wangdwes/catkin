@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/install
+
+Name: interactive_markers
+Description: Description of interactive_markers
+Version: 1.11.0
+Cflags: -I/home/dawei/catkin-ws/install/include
+Libs: -L/home/dawei/catkin-ws/install/lib -linteractive_markers
+Requires: roscpp rosconsole rospy tf visualization_msgs

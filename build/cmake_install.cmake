@@ -125,9 +125,13 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/dawei/catkin-ws/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/dawei/catkin-ws/build/beginner_tutorials/cmake_install.cmake")
-  INCLUDE("/home/dawei/catkin-ws/build/foobar/cmake_install.cmake")
-  INCLUDE("/home/dawei/catkin-ws/build/mrsd_tutorial/cmake_install.cmake")
+  INCLUDE("/home/dawei/catkin-ws/build/gazebo_ros_demos/rrbot_control/cmake_install.cmake")
+  INCLUDE("/home/dawei/catkin-ws/build/gazebo_ros_demos/rrbot_description/cmake_install.cmake")
+  INCLUDE("/home/dawei/catkin-ws/build/gazebo_ros_demos/rrbot_gazebo/cmake_install.cmake")
+  INCLUDE("/home/dawei/catkin-ws/build/evolutus_description/cmake_install.cmake")
+  INCLUDE("/home/dawei/catkin-ws/build/evolutus_gazebo/cmake_install.cmake")
+  INCLUDE("/home/dawei/catkin-ws/build/gazebo_ros_demos/custom_plugin_tutorial/cmake_install.cmake")
+  INCLUDE("/home/dawei/catkin-ws/build/linkstates2tf/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

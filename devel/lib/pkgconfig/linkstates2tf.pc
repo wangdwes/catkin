@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: linkstates2tf
+Description: Description of linkstates2tf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/devel/lib 
+Requires: 

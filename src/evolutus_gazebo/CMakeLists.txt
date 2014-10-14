@@ -6,7 +6,7 @@ project(evolutus_gazebo)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  stdmsgs
+  std_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -81,7 +81,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES evolutus_gazebo
-#  CATKIN_DEPENDS roscpp stdmsgs
+#  CATKIN_DEPENDS roscpp std_msgs
 #  DEPENDS system_lib
 )
 

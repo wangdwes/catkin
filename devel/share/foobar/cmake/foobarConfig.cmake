@@ -67,7 +67,7 @@ set(foobar_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(foobar_SOURCE_PREFIX /home/dawei/catkin-ws/src/foobar)
+  set(foobar_SOURCE_PREFIX /home/dawei/catkin-ws/src/recycle/foobar)
   set(foobar_DEVEL_PREFIX /home/dawei/catkin-ws/devel)
   set(foobar_INSTALL_PREFIX "")
   set(foobar_PREFIX ${foobar_DEVEL_PREFIX})
@@ -103,7 +103,7 @@ if(NOT "" STREQUAL "")
         message(FATAL_ERROR "Project 'foobar' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'foobar <foobar@garage.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'foobar' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/dawei/catkin-ws/src/foobar/${idir}'.  Ask the maintainer 'foobar <foobar@garage.com>' to fix it.")
+      message(FATAL_ERROR "Project 'foobar' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/dawei/catkin-ws/src/recycle/foobar/${idir}'.  Ask the maintainer 'foobar <foobar@garage.com>' to fix it.")
     endif()
     _list_append_unique(foobar_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dawei/catkin-ws/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /home/dawei/catkin-ws/devel/lib;/home/dawei/catkin-ws/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
