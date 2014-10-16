@@ -3,18 +3,16 @@
 #include "geometry_msgs/Pose.h"
 #include "geometry_msgs/Transform.h"
 #include "geometry_msgs/Quaternion.h"
-#include "tf/transform_broadcaster.h"
 #include "tf/tf.h"
+#include "tf/transform_broadcaster.h"
 
-std::string parentFrame;
+std::string targetFrame;
 
 void linkstates2tfCallBack(const gazebo_msgs::LinkStates::ConstPtr& msg)
 {
   static tf::TransformBroadcaster broadcaster;
 
   for (int index = 0; index < msg->name.size(); index++) {
-
-    // alternatively we can just recast it... 
 
     tf::Transform transform(
       tf::Quaternion(
@@ -30,8 +28,8 @@ void linkstates2tfCallBack(const gazebo_msgs::LinkStates::ConstPtr& msg)
     broadcaster.sendTransform(tf::StampedTransform(
       transform,          // the transform,
       ros::Time::now(),   // the time,
-      "world",            // the parent frame, 
-      msg->name[index])); // the child frame.
+      targetFrame,        // the target frame,
+      msg->name[index])); // the source frame.
    
   }
 }
@@ -41,8 +39,8 @@ int main(int argc, char **argv)
   ros::init(argc, argv, "linkstates2tf");
 
   if (argc != 2) {
-    ROS_ERROR("Need parent frame name!"); return -1; }
-  parentFrame = argv[1];
+    ROS_ERROR("targetFrame not specified!"); return -1; }
+  targetFrame = argv[1];
 
   ros::NodeHandle handle;
   ros::Subscriber subscriber = handle.subscribe(

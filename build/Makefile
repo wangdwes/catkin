@@ -787,6 +787,162 @@ gazebo_tutorials/fast:
 .PHONY : gazebo_tutorials/fast
 
 #=============================================================================
+# Target rules for targets named _run_tests_laser_geometry
+
+# Build rule for target.
+_run_tests_laser_geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry
+.PHONY : _run_tests_laser_geometry
+
+# fast build rule for target.
+_run_tests_laser_geometry/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry.dir/build
+.PHONY : _run_tests_laser_geometry/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_laser_geometry_gtest
+
+# Build rule for target.
+_run_tests_laser_geometry_gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_gtest
+.PHONY : _run_tests_laser_geometry_gtest
+
+# fast build rule for target.
+_run_tests_laser_geometry_gtest/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest.dir/build
+.PHONY : _run_tests_laser_geometry_gtest/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_laser_geometry_gtest_projection_test
+
+# Build rule for target.
+_run_tests_laser_geometry_gtest_projection_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_gtest_projection_test
+.PHONY : _run_tests_laser_geometry_gtest_projection_test
+
+# fast build rule for target.
+_run_tests_laser_geometry_gtest_projection_test/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest_projection_test.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest_projection_test.dir/build
+.PHONY : _run_tests_laser_geometry_gtest_projection_test/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_laser_geometry_nosetests
+
+# Build rule for target.
+_run_tests_laser_geometry_nosetests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_nosetests
+.PHONY : _run_tests_laser_geometry_nosetests
+
+# fast build rule for target.
+_run_tests_laser_geometry_nosetests/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests.dir/build
+.PHONY : _run_tests_laser_geometry_nosetests/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_laser_geometry_nosetests_test.projection_test.py
+
+# Build rule for target.
+_run_tests_laser_geometry_nosetests_test.projection_test.py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_laser_geometry_nosetests_test.projection_test.py
+.PHONY : _run_tests_laser_geometry_nosetests_test.projection_test.py
+
+# fast build rule for target.
+_run_tests_laser_geometry_nosetests_test.projection_test.py/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build.make laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build
+.PHONY : _run_tests_laser_geometry_nosetests_test.projection_test.py/fast
+
+#=============================================================================
+# Target rules for targets named laser_geometry
+
+# Build rule for target.
+laser_geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 laser_geometry
+.PHONY : laser_geometry
+
+# fast build rule for target.
+laser_geometry/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/laser_geometry.dir/build.make laser_geometry/CMakeFiles/laser_geometry.dir/build
+.PHONY : laser_geometry/fast
+
+#=============================================================================
+# Target rules for targets named projection_test
+
+# Build rule for target.
+projection_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 projection_test
+.PHONY : projection_test
+
+# fast build rule for target.
+projection_test/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/projection_test.dir/build.make laser_geometry/CMakeFiles/projection_test.dir/build
+.PHONY : projection_test/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_laser_geometry
+
+# Build rule for target.
+run_tests_laser_geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry
+.PHONY : run_tests_laser_geometry
+
+# fast build rule for target.
+run_tests_laser_geometry/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry.dir/build
+.PHONY : run_tests_laser_geometry/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_laser_geometry_gtest
+
+# Build rule for target.
+run_tests_laser_geometry_gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_gtest
+.PHONY : run_tests_laser_geometry_gtest
+
+# fast build rule for target.
+run_tests_laser_geometry_gtest/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest.dir/build
+.PHONY : run_tests_laser_geometry_gtest/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_laser_geometry_gtest_projection_test
+
+# Build rule for target.
+run_tests_laser_geometry_gtest_projection_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_gtest_projection_test
+.PHONY : run_tests_laser_geometry_gtest_projection_test
+
+# fast build rule for target.
+run_tests_laser_geometry_gtest_projection_test/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest_projection_test.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_gtest_projection_test.dir/build
+.PHONY : run_tests_laser_geometry_gtest_projection_test/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_laser_geometry_nosetests
+
+# Build rule for target.
+run_tests_laser_geometry_nosetests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_nosetests
+.PHONY : run_tests_laser_geometry_nosetests
+
+# fast build rule for target.
+run_tests_laser_geometry_nosetests/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests.dir/build
+.PHONY : run_tests_laser_geometry_nosetests/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_laser_geometry_nosetests_test.projection_test.py
+
+# Build rule for target.
+run_tests_laser_geometry_nosetests_test.projection_test.py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_laser_geometry_nosetests_test.projection_test.py
+.PHONY : run_tests_laser_geometry_nosetests_test.projection_test.py
+
+# fast build rule for target.
+run_tests_laser_geometry_nosetests_test.projection_test.py/fast:
+	$(MAKE) -f laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build.make laser_geometry/CMakeFiles/run_tests_laser_geometry_nosetests_test.projection_test.py.dir/build
+.PHONY : run_tests_laser_geometry_nosetests_test.projection_test.py/fast
+
+#=============================================================================
 # Target rules for targets named linkstates2tf
 
 # Build rule for target.
@@ -798,6 +954,19 @@ linkstates2tf: cmake_check_build_system
 linkstates2tf/fast:
 	$(MAKE) -f linkstates2tf/CMakeFiles/linkstates2tf.dir/build.make linkstates2tf/CMakeFiles/linkstates2tf.dir/build
 .PHONY : linkstates2tf/fast
+
+#=============================================================================
+# Target rules for targets named pc2projector
+
+# Build rule for target.
+pc2projector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pc2projector
+.PHONY : pc2projector
+
+# fast build rule for target.
+pc2projector/fast:
+	$(MAKE) -f pc2projector/CMakeFiles/pc2projector.dir/build.make pc2projector/CMakeFiles/pc2projector.dir/build
+.PHONY : pc2projector/fast
 
 # Help Target
 help:
@@ -861,7 +1030,20 @@ help:
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... gazebo_tutorials"
+	@echo "... _run_tests_laser_geometry"
+	@echo "... _run_tests_laser_geometry_gtest"
+	@echo "... _run_tests_laser_geometry_gtest_projection_test"
+	@echo "... _run_tests_laser_geometry_nosetests"
+	@echo "... _run_tests_laser_geometry_nosetests_test.projection_test.py"
+	@echo "... laser_geometry"
+	@echo "... projection_test"
+	@echo "... run_tests_laser_geometry"
+	@echo "... run_tests_laser_geometry_gtest"
+	@echo "... run_tests_laser_geometry_gtest_projection_test"
+	@echo "... run_tests_laser_geometry_nosetests"
+	@echo "... run_tests_laser_geometry_nosetests_test.projection_test.py"
 	@echo "... linkstates2tf"
+	@echo "... pc2projector"
 .PHONY : help
 
 

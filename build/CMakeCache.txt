@@ -918,7 +918,7 @@ _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 _file_name:FILEPATH=/home/dawei/catkin-ws/src/recycle/laser_assembler/test/test_laser_assembler.launch
 
 //Path to a file.
-_path_name:FILEPATH=/home/dawei/catkin-ws/src/recycle/laser_geometry/test/projection_test.py
+_path_name:FILEPATH=/home/dawei/catkin-ws/src/laser_geometry/test/projection_test.py
 
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/indigo/share/actionlib/cmake
@@ -1075,7 +1075,7 @@ laser_assembler_BINARY_DIR:STATIC=/home/dawei/catkin-ws/build/recycle/laser_asse
 laser_assembler_SOURCE_DIR:STATIC=/home/dawei/catkin-ws/src/recycle/laser_assembler
 
 //Value Computed by CMake
-laser_geometry_BINARY_DIR:STATIC=/home/dawei/catkin-ws/build/recycle/laser_geometry
+laser_geometry_BINARY_DIR:STATIC=/home/dawei/catkin-ws/build/laser_geometry
 
 //The directory containing a CMake configuration file for laser_geometry.
 laser_geometry_DIR:PATH=/home/dawei/catkin-ws/devel/share/laser_geometry/cmake
@@ -1084,7 +1084,7 @@ laser_geometry_DIR:PATH=/home/dawei/catkin-ws/devel/share/laser_geometry/cmake
 laser_geometry_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
 
 //Value Computed by CMake
-laser_geometry_SOURCE_DIR:STATIC=/home/dawei/catkin-ws/src/recycle/laser_geometry
+laser_geometry_SOURCE_DIR:STATIC=/home/dawei/catkin-ws/src/laser_geometry
 
 //Value Computed by CMake
 laser_mapper_BINARY_DIR:STATIC=/home/dawei/catkin-ws/build/recycle/laser_mapper
@@ -1130,6 +1130,12 @@ nav_msgs_DIR:PATH=/opt/ros/indigo/share/nav_msgs/cmake
 
 //Path to a library.
 onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libsdformat.so
+
+//Value Computed by CMake
+pc2projector_BINARY_DIR:STATIC=/home/dawei/catkin-ws/build/pc2projector
+
+//Value Computed by CMake
+pc2projector_SOURCE_DIR:STATIC=/home/dawei/catkin-ws/src/pc2projector
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
@@ -1392,7 +1398,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=9
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

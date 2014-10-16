@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pc2projector")
+set(pc2projector_MAINTAINER "dawei <dawei@todo.todo>")
+set(pc2projector_DEPRECATED "")
+set(pc2projector_VERSION "0.0.0")
+set(pc2projector_BUILD_DEPENDS "laser_geometry" "sensor_msgs" "std_msgs" "tf")
+set(pc2projector_RUN_DEPENDS "laser_geometry" "sensor_msgs" "std_msgs" "tf")
+set(pc2projector_BUILDTOOL_DEPENDS "catkin")
