@@ -388,90 +388,6 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_py.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
 	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
@@ -512,48 +428,6 @@ sensor_msgs_generate_messages_py: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/senso
 sensor_msgs_generate_messages_py/fast:
 	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/dawei/catkin-ws/build && $(MAKE) -f gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 gazebo_ros_demos/rrbot_gazebo/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
@@ -752,18 +626,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_py"

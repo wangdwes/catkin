@@ -1,0 +1,2 @@
+set(pcl_msgs_MESSAGE_FILES "/home/dawei/catkin-ws/src/src/msg/ModelCoefficients.msg;/home/dawei/catkin-ws/src/src/msg/PointIndices.msg;/home/dawei/catkin-ws/src/src/msg/PolygonMesh.msg;/home/dawei/catkin-ws/src/src/msg/Vertices.msg")
+set(pcl_msgs_SERVICE_FILES "")

@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/install
+
+Name: urdf_parser_plugin
+Description: Description of urdf_parser_plugin
+Version: 1.11.5
+Cflags: -I/home/dawei/catkin-ws/install/include -I/usr/include
+Libs: -L/home/dawei/catkin-ws/install/lib 
+Requires: 

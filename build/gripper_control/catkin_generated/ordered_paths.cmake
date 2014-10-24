@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/dawei/catkin-ws/devel/lib;/opt/ros/indigo/lib")

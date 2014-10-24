@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: resource_retriever
+Description: Description of resource_retriever
+Version: 1.11.5
+Cflags: -I/home/dawei/catkin-ws/src/robot_model/resource_retriever/include
+Libs: -L/home/dawei/catkin-ws/devel/lib -lresource_retriever
+Requires: 

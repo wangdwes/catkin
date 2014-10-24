@@ -6,7 +6,7 @@ from sys import path as sys_path
 
 from pkgutil import extend_path
 
-__extended_path = "/home/dawei/catkin-ws/src/recycle/interactive_markers/src".split(";")
+__extended_path = "/home/dawei/catkin-ws/src/interactive_markers/src".split(";")
 for p in reversed(__extended_path):
     sys_path.insert(0, p)
     del p

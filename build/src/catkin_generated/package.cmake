@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "pcl_msgs")
+set(pcl_msgs_MAINTAINER "Julius Kammerl <jkammerl@willowgarage.com>")
+set(pcl_msgs_DEPRECATED "")
+set(pcl_msgs_VERSION "0.1.0")
+set(pcl_msgs_BUILD_DEPENDS "eigen" "message_generation" "sensor_msgs" "std_msgs")
+set(pcl_msgs_RUN_DEPENDS "message_runtime" "sensor_msgs" "std_msgs")
+set(pcl_msgs_BUILDTOOL_DEPENDS "catkin")

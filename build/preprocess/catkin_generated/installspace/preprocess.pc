@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/install
+
+Name: preprocess
+Description: Description of preprocess
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/install/lib 
+Requires: 

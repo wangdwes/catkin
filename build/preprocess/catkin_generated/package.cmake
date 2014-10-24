@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "preprocess")
+set(preprocess_MAINTAINER "yuhan <yuhan@todo.todo>")
+set(preprocess_DEPRECATED "")
+set(preprocess_VERSION "0.0.0")
+set(preprocess_BUILD_DEPENDS )
+set(preprocess_RUN_DEPENDS )
+set(preprocess_BUILDTOOL_DEPENDS "catkin")

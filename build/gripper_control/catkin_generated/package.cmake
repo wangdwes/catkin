@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "gripper_control")
+set(gripper_control_MAINTAINER "Dawei Wang <daweiwan@andrew.cmu.edu>")
+set(gripper_control_DEPRECATED "")
+set(gripper_control_VERSION "0.0.0")
+set(gripper_control_BUILD_DEPENDS "interactive_markers" "roscpp" "tf" "visualization_msgs")
+set(gripper_control_RUN_DEPENDS "interactive_markers" "roscpp" "tf" "visualization_msgs")
+set(gripper_control_BUILDTOOL_DEPENDS "catkin")

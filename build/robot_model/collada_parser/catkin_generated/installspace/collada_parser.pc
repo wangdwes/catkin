@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/install
+
+Name: collada_parser
+Description: Description of collada_parser
+Version: 1.11.5
+Cflags: -I/home/dawei/catkin-ws/install/include -I/usr/include
+Libs: -L/home/dawei/catkin-ws/install/lib -lcollada_parser
+Requires: roscpp urdf_parser_plugin

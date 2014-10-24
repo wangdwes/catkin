@@ -1,0 +1,665 @@
+<sdf version='1.5'>
+  <model name='s-model_articulated'>
+    <link name='palm'>
+      <gravity>0</gravity>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.0735398 0.0713777 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='palm_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/palm.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='palm_collision_finger_middle_link_0'>
+        <pose>0.00406378 -0.024067 0.036 -3.14159 -7.34641e-06 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='palm_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/palm.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='palm_visual_finger_middle_link_0'>
+        <pose>0.0455159 0.0414 0 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_0.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <link name='finger_1_link_0'>
+      <pose>-0.0455 0.0214 0.036 3.14159 -7.34641e-06 1.57159</pose>
+      <inertial>
+        <pose>0.02 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_1_link_0_collision'>
+        <pose>-0.0455 0.0414 0.036 3.14159 -7.34641e-06 1.57159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_1_link_0_visual'>
+        <pose>0.02 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_0.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='palm_finger_1_joint' type='revolute'>
+      <child>finger_1_link_0</child>
+      <parent>palm</parent>
+      <axis>
+        <xyz>1 0.000796327 0</xyz>
+        <limit>
+          <lower>-0.16</lower>
+          <upper>0.25</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_1_link_1'>
+      <pose>-0.0455159 0.0414 0.0360001 3.14159 -7.34641e-06 1.57159</pose>
+      <inertial>
+        <pose>0.05 0.028 0 0 0 -0.52</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_1_link_1_collision'>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_1_link_1_visual'>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_1_joint_1' type='revolute'>
+      <child>finger_1_link_1</child>
+      <parent>finger_1_link_0</parent>
+      <axis>
+        <xyz>-5.85014e-09 7.34641e-06 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_1_link_2'>
+      <pose>-0.0735557 0.0913777 0.0360005 3.14159 -6.37536e-06 2.09159</pose>
+      <inertial>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_1_link_2_collision'>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_1_link_2_visual'>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_1_joint_2' type='revolute'>
+      <child>finger_1_link_2</child>
+      <parent>finger_1_link_1</parent>
+      <axis>
+        <xyz>-5.85014e-09 7.34641e-06 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_1_link_3'>
+      <pose>-0.092961 0.125207 0.0360008 3.14159 -6.37536e-06 2.09159</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0.52</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_1_link_3_collision'>
+        <pose>0 0 0 0 -0 0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_1_link_3_visual'>
+        <pose>0 0 0 0 -0 0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_1_joint_3' type='revolute'>
+      <child>finger_1_link_3</child>
+      <parent>finger_1_link_2</parent>
+      <axis>
+        <xyz>-5.85014e-09 7.34641e-06 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_2_link_0'>
+      <pose>-0.0455 0.0214 -0.036 3.14159 -7.34641e-06 1.57159</pose>
+      <inertial>
+        <pose>0.02 0 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_2_link_0_collision'>
+        <pose>-0.0455 0.0414 0.036 3.14159 -7.34641e-06 1.57159</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_2_link_0_visual'>
+        <pose>0.02 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_0.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='palm_finger_2_joint' type='revolute'>
+      <child>finger_2_link_0</child>
+      <parent>palm</parent>
+      <axis>
+        <xyz>1 0.000796327 0</xyz>
+        <limit>
+          <lower>-0.25</lower>
+          <upper>0.16</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_2_link_1'>
+      <pose>-0.0455159 0.0414 -0.0359999 3.14159 -7.34641e-06 1.57159</pose>
+      <inertial>
+        <pose>0.05 -0.028 0 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_2_link_1_collision'>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_2_link_1_visual'>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_2_joint_1' type='revolute'>
+      <child>finger_2_link_1</child>
+      <parent>finger_2_link_0</parent>
+      <axis>
+        <xyz>-5.85014e-09 7.34641e-06 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_2_link_2'>
+      <pose>-0.0735557 0.0913777 -0.0359995 3.14159 -6.37536e-06 2.09159</pose>
+      <inertial>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_2_link_2_collision'>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_2_link_2_visual'>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_2_joint_2' type='revolute'>
+      <child>finger_2_link_2</child>
+      <parent>finger_2_link_1</parent>
+      <axis>
+        <xyz>-5.85014e-09 7.34641e-06 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_2_link_3'>
+      <pose>-0.092961 0.125207 -0.0359992 3.14159 -6.37536e-06 2.09159</pose>
+      <inertial>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_2_link_3_collision'>
+        <pose>0 0 0 0 -0 0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_2_link_3_visual'>
+        <pose>0 0 0 0 -0 0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_2_joint_3' type='revolute'>
+      <child>finger_2_link_3</child>
+      <parent>finger_2_link_2</parent>
+      <axis>
+        <xyz>-5.85014e-09 7.34641e-06 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_middle_link_1'>
+      <pose>0.0455159 0.0414 0 0 -0 1.57</pose>
+      <inertial>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_middle_link_1_collision'>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_middle_link_1_visual'>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_middle_joint_1' type='revolute'>
+      <child>finger_middle_link_1</child>
+      <parent>palm</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_middle_link_2'>
+      <pose>0.0735557 0.0913777 0 0 -0 1.05</pose>
+      <inertial>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_middle_link_2_collision'>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_middle_link_2_visual'>
+        <pose>0.039 0 0.0075 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_middle_joint_2' type='revolute'>
+      <child>finger_middle_link_2</child>
+      <parent>finger_middle_link_1</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='finger_middle_link_3'>
+      <pose>0.092961 0.125207 0 0 -0 1.05</pose>
+      <inertial>
+        <pose>0.05 -0.028 0 0 0 -0.52</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='finger_middle_link_3_collision'>
+        <pose>0 0 0 0 -0 0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/collision/link_3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='finger_middle_link_3_visual'>
+        <pose>0 0 0 0 -0 0.52</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://robotiq/meshes/s-model_articulated/visual/link_3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+    <joint name='finger_middle_joint_3' type='revolute'>
+      <child>finger_middle_link_3</child>
+      <parent>finger_middle_link_2</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>3.1416</upper>
+          <effort>100</effort>
+          <velocity>100</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+  </model>
+</sdf>

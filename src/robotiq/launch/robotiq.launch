@@ -2,8 +2,10 @@
   <param name="robot_description"
     command="$(find xacro)/xacro.py '$(find robotiq)/cfg/s-model_articulated.xacro'" />
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-    <param name="use_gui" value="TRUE"/>
+    <param name="use_gui" value="FALSE"/>
+    <param name="rate" value="100"/>
+    <rosparam param="source_list">[interactive_control_feedback]</rosparam>
   </node>
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
-  <node name="rviz" pkg="rviz" type="rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-f /world"/>
 </launch>

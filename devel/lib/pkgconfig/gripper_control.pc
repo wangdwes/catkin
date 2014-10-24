@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/devel
+
+Name: gripper_control
+Description: Description of gripper_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/devel/lib 
+Requires: interactive_markers roscpp visualization_msgs tf

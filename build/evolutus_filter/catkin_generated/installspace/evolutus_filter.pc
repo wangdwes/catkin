@@ -1,0 +1,8 @@
+prefix=/home/dawei/catkin-ws/install
+
+Name: evolutus_filter
+Description: Description of evolutus_filter
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dawei/catkin-ws/install/lib 
+Requires: 

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "evolutus_pcl")
+set(evolutus_pcl_MAINTAINER "yuhan <yuhan@todo.todo>")
+set(evolutus_pcl_DEPRECATED "")
+set(evolutus_pcl_VERSION "0.0.0")
+set(evolutus_pcl_BUILD_DEPENDS )
+set(evolutus_pcl_RUN_DEPENDS )
+set(evolutus_pcl_BUILDTOOL_DEPENDS "catkin")
